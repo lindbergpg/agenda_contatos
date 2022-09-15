@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? família= Montserrat:wght@400;700 & display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./imagens/telefone.png" alt="Telefone">
+            <h1>Agenda de contatos</h1>
+        </header>
+        <form id="form-contatos">
+            <input type="text" placeholder="Nome do contato" id="nome-contato" required>
+            <input type="tel" placeholder="Número do telefone" id="numero-telefone" required>
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do contato</th>
+                    <th>Número do telefone</th>
+                    <th>Adicionado?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João Carlos</td>
+                    <td>61 9 93040000</td>
+                    <td><img src="./imagens/Ok.png" alt="Ok"></td>
+                </tr>
+                <tr>
+                    <td>José Henrique</td>
+                    <td>61 9 87650000</td>
+                    <td><img src="./imagens/Ok.png" alt="Ok"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Quantidade de contatos</td>
+                    <td> adicinados</td>
+                    <td><span class="contador">2</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
