@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda de contatos</title>
     <link rel="stylesheet" href="./style.css">
+    <!----
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? família= Montserrat:wght@400;700 & display=swap" rel="stylesheet">
+    --->
 </head>
 <body>
     <div class="container">
@@ -18,7 +20,7 @@
         </header>
         <form id="form-contatos">
             <input type="text" placeholder="Nome do contato" id="nome-contato" required>
-            <input type="tel" placeholder="Número do telefone" id="numero-telefone" required>
+            <input type="tel" placeholder="Tel (11) 2222-3333" id="numero-telefone" autocomplete="tel" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" required>
             <button type="submit">Adicionar +</button>
         </form>
         <table cellspacing="0">
@@ -30,16 +32,6 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>João Carlos</td>
-                    <td>61 9 93040000</td>
-                    <td><img src="./imagens/Ok.png" alt="Ok"></td>
-                </tr>
-                <tr>
-                    <td>José Henrique</td>
-                    <td>61 9 87650000</td>
-                    <td><img src="./imagens/Ok.png" alt="Ok"></td>
-                </tr>
             </tbody>
             <tfoot>
                 <tr>
@@ -50,5 +42,6 @@
             </tfoot>
         </table>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
