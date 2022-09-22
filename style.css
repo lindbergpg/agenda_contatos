@@ -94,10 +94,10 @@ form button {
 }
 
 form button:hover {
-    background-color: #20a41c;
+    background-color: #1b8818;
 }
 
-.contador {
+#contador {
     padding: 4px;
     font-weight: bold;
     color: #fff;
